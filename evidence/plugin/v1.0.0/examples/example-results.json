@@ -1,0 +1,32 @@
+[
+  {
+    "case_id": "T-01",
+    "action": "退货退款",
+    "refund_cents": 10000,
+    "freight": "买家",
+    "rules": ["R-RETURN", "R-AMOUNT"],
+    "missing": [],
+    "reason": "T-01-O 显示签收 2027-03-01 09:00、申请 2027-03-05 09:00，间隔 96 小时，在政策 N 小时内；订单非定制，T-01-R 确认商品完好，符合 R-RETURN。按 R-AMOUNT 计算：12000 − 2000 − 0 = 10000 分，退回运费由买家承担。",
+    "customer_reply": "您好，您的订单符合无质量问题退货条件：建议退货退款，商品行可退 100.00 元，退回运费由您承担，最终结果以审核为准。"
+  },
+  {
+    "case_id": "T-02",
+    "action": "补充材料",
+    "refund_cents": null,
+    "freight": "待定",
+    "rules": ["R-MISSING", "R-FAULT", "R-AMOUNT"],
+    "missing": ["故障视频或售后检测记录", "该商品行优惠分摊明细"],
+    "reason": "T-02-R 的 fault_confirmed 为 null，仅有客户口述，故障未核实，不能适用 R-FAULT；同时 T-02-O 的 line_coupon_cents 为 null，按 R-AMOUNT 无法计算金额，故整体建议为补充材料，金额与运费待定。",
+    "customer_reply": "您好，目前故障凭证与该商品行的优惠分摊信息尚缺失，暂无法确认退款金额，运费也需核定。请补充故障视频或检测记录以及优惠分摊明细，收到后会继续审核。"
+  },
+  {
+    "case_id": "T-03",
+    "action": "物流核查",
+    "refund_cents": null,
+    "freight": "待定",
+    "rules": ["R-LOGISTICS"],
+    "missing": ["投递与签收凭据", "包裹流转记录"],
+    "reason": "客户称未收到而 T-03-L 显示已签收，但 delivery_proof_verified 为 null、loss_confirmed 为 false，按 R-LOGISTICS 既不能认定客户已收到，也不能判定丢失，应先做物流核查，金额与运费待定。",
+    "customer_reply": "您好，物流显示已签收但您表示未收到，此类情况需先进行物流核查，核验签收凭据与包裹流转记录。核查期间无法确认退款金额和运费，请保持电话畅通。"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "case_id": "T-01",
+    "customer_message": "不需要了，申请退货。",
+    "order": {
+      "source": "T-01-O",
+      "signed_at": "2027-03-01T09:00:00+08:00",
+      "applied_at": "2027-03-05T09:00:00+08:00",
+      "customized": false,
+      "line_original_cents": 12000,
+      "line_coupon_cents": 2000,
+      "line_refunded_cents": 0
+    },
+    "review": {
+      "source": "T-01-R",
+      "condition_intact": true
+    }
+  },
+  {
+    "case_id": "T-02",
+    "customer_message": "耳机没声音，视频晚点发，先给我退款。",
+    "order": {
+      "source": "T-02-O",
+      "signed_at": "2027-03-01T09:00:00+08:00",
+      "applied_at": "2027-03-05T09:00:00+08:00",
+      "line_original_cents": 30000,
+      "line_coupon_cents": null,
+      "line_refunded_cents": 0
+    },
+    "review": {
+      "source": "T-02-R",
+      "fault_confirmed": null,
+      "detail": "尚未收到故障凭证"
+    }
+  },
+  {
+    "case_id": "T-03",
+    "customer_message": "物流显示签收，但我没收到。",
+    "order": {
+      "source": "T-03-O",
+      "line_original_cents": 5000,
+      "line_coupon_cents": 0,
+      "line_refunded_cents": 0
+    },
+    "logistics": {
+      "source": "T-03-L",
+      "status": "已签收",
+      "delivery_proof_verified": null,
+      "loss_confirmed": false
+    }
+  }
+]

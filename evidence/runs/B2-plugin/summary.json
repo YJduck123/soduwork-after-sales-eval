@@ -1,0 +1,24 @@
+{
+  "total": 12,
+  "by_action": {
+    "退货退款": 4,
+    "人工复核": 2,
+    "补充材料": 3,
+    "直接退款": 1,
+    "物流核查": 2
+  },
+  "pending_case_ids": [
+    "T02",
+    "T05",
+    "T06",
+    "T07",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "pending_count": 7,
+  "refund_action_count": 5,
+  "refund_total_cents": 110100,
+  "errors": 0,
+  "warnings": 3
+}

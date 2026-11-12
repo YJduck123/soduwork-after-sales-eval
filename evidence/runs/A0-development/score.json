@@ -1,0 +1,97 @@
+{
+  "total": 12,
+  "core_matches": 12,
+  "field_matches": {
+    "action": 12,
+    "refund_cents": 12,
+    "freight": 12
+  },
+  "required_rule_coverage": 12,
+  "manual_review_required": "逐条核实来源引用、规则适用、补问内容和客户回复；规则覆盖不等于解释正确。",
+  "cases": [
+    {
+      "case_id": "D01",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "普通完好商品，72小时；9900-1000-0=8900。"
+    },
+    {
+      "case_id": "D02",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "96小时；25900-5000-2900=18000，不能重复退29元。"
+    },
+    {
+      "case_id": "D03",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "192小时，超出普通退货期限，不直接承诺拒绝一切售后。"
+    },
+    {
+      "case_id": "D04",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "360小时且故障确认，应退货后退款，不同意直接仅退款。"
+    },
+    {
+      "case_id": "D05",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "需要故障凭证及核验，客户声称坏了不能代替审核。"
+    },
+    {
+      "case_id": "D06",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "错发已核实；239900-20000=219900。"
+    },
+    {
+      "case_id": "D07",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "缺件确认且有库存，只补配件，不全额退款。"
+    },
+    {
+      "case_id": "D08",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "缺件确认但不能补发；9900-1000=8900。"
+    },
+    {
+      "case_id": "D09",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "需查签收凭据和实际收件情况，不能只凭签收状态结案。"
+    },
+    {
+      "case_id": "D10",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "承运商确认丢失，不需退货；25900-2000=23900。"
+    },
+    {
+      "case_id": "D11",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "定制商品无质量问题，转人工。"
+    },
+    {
+      "case_id": "D12",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "故障已确认但缺该行优惠分摊金额，需补订单金额记录。"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "total": 12,
+  "core_matches": 12,
+  "field_matches": {
+    "action": 12,
+    "refund_cents": 12,
+    "freight": 12
+  },
+  "required_rule_coverage": 12,
+  "manual_review_required": "逐条核实来源引用、规则适用、补问内容和客户回复；规则覆盖不等于解释正确。",
+  "cases": [
+    {
+      "case_id": "T01",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "恰好168小时属于期限内；14900-2000=12900。"
+    },
+    {
+      "case_id": "T02",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "168小时1分钟已超出期限，不能按日期粗算。"
+    },
+    {
+      "case_id": "T03",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "故障确认360小时，促销不退换不覆盖P03；24900-5000=19900。"
+    },
+    {
+      "case_id": "T04",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "定制商品故障确认240小时；49900-4000=45900，需退回。"
+    },
+    {
+      "case_id": "T05",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "补实收标签并核验；不能把客户猜测当错发事实。"
+    },
+    {
+      "case_id": "T06",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "需开箱/缺件资料核验；有库存不等于已确认缺件。"
+    },
+    {
+      "case_id": "T07",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "缺正式签收时间，客户说前几天不能用来计算期限。"
+    },
+    {
+      "case_id": "T08",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "只退键盘；12000-1500-2000=8500，不能用整单金额。"
+    },
+    {
+      "case_id": "T09",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "丢失正式确认；25900-2000-1000=22900，扣除已退。"
+    },
+    {
+      "case_id": "T10",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "重量异常只是线索，需核实开箱和物流流转。"
+    },
+    {
+      "case_id": "T11",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "744小时超出720小时，不能直接套30日内规则。"
+    },
+    {
+      "case_id": "T12",
+      "core_match": true,
+      "mismatches": [],
+      "missing_required_rules": [],
+      "manual_review_note": "照片存在不证明投递地点是客户家，仍需地址/收件核查。"
+    }
+  ]
+}

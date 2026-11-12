@@ -1,0 +1,58 @@
+{
+  "frozen_at": "2026-11-12T08:54:50.753Z",
+  "origin": "SoduWork / 售后实测 A / 插件开发助手",
+  "plugin_key": "after-sales-disposal-method",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "soduwork-plugin-draft.json",
+      "bytes": 14003,
+      "sha256": "b6f930cd7e503d5a67d49e4444f442411b27518facb2daa45d94c65eb8d9e751"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 8420,
+      "sha256": "b475533e1d7eff49bab1d8276202f4ca840314f8b1a1844b980ce62ed8b7af2c"
+    },
+    {
+      "path": "references/output-contract.md",
+      "bytes": 2469,
+      "sha256": "541fccf72bf6c59fc75054b21ad429472a8db911b526a47da3d0377b45d7156d"
+    },
+    {
+      "path": "references/reply-and-count-discipline.md",
+      "bytes": 2817,
+      "sha256": "6c771c7dc5dad5a16459c52437018dc61dd8b0dccc33938725979d12d89bf33f"
+    },
+    {
+      "path": "references/worked-example.md",
+      "bytes": 3032,
+      "sha256": "ef588bf390337e4e824db71b3a9c11e0160522ab1a7fee59ea9adf96c1980b16"
+    },
+    {
+      "path": "examples/example-batch.json",
+      "bytes": 1317,
+      "sha256": "f7a2abd3c790b0a327d9801672cf9701848e29c9fc1eebf5fb1e514d3421b9e7"
+    },
+    {
+      "path": "examples/example-results.json",
+      "bytes": 2081,
+      "sha256": "175c464729335d1d86457a2334f2655a5e943e5ba4d46d1cb2e5993891d61290"
+    },
+    {
+      "path": "scripts/calc_refund.py",
+      "bytes": 3056,
+      "sha256": "e08ed2591a14fe68c899dd3072f3779abdac5f17d0be4edb2487ded93bde7ccc"
+    },
+    {
+      "path": "scripts/elapsed_hours.py",
+      "bytes": 2262,
+      "sha256": "85432498a7ac7d2cb2dbaa5012f96fa865ee1538b5cb1e2613714608cfbbbb8b"
+    },
+    {
+      "path": "scripts/check_results.py",
+      "bytes": 10909,
+      "sha256": "6aad531e699e2fb03fbcf03a520c2c9f72ea5585a50ca9ca8af5c3ecd1eda7e6"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "development": [
+    {"case_id":"D01","action":"退货退款","refund_cents":8900,"freight":"买家","rules":["P02","P06"],"review_note":"普通完好商品，72小时；9900-1000-0=8900。"},
+    {"case_id":"D02","action":"退货退款","refund_cents":18000,"freight":"买家","rules":["P02","P06"],"review_note":"96小时；25900-5000-2900=18000，不能重复退29元。"},
+    {"case_id":"D03","action":"人工复核","refund_cents":null,"freight":"待定","rules":["P02"],"review_note":"192小时，超出普通退货期限，不直接承诺拒绝一切售后。"},
+    {"case_id":"D04","action":"退货退款","refund_cents":39900,"freight":"商家","rules":["P03","P06"],"review_note":"360小时且故障确认，应退货后退款，不同意直接仅退款。"},
+    {"case_id":"D05","action":"补充材料","refund_cents":null,"freight":"待定","rules":["P01","P03"],"review_note":"需要故障凭证及核验，客户声称坏了不能代替审核。"},
+    {"case_id":"D06","action":"退货退款","refund_cents":219900,"freight":"商家","rules":["P04","P06"],"review_note":"错发已核实；239900-20000=219900。"},
+    {"case_id":"D07","action":"补发配件","refund_cents":0,"freight":"商家","rules":["P05"],"review_note":"缺件确认且有库存，只补配件，不全额退款。"},
+    {"case_id":"D08","action":"退货退款","refund_cents":8900,"freight":"商家","rules":["P05","P06"],"review_note":"缺件确认但不能补发；9900-1000=8900。"},
+    {"case_id":"D09","action":"物流核查","refund_cents":null,"freight":"待定","rules":["P07"],"review_note":"需查签收凭据和实际收件情况，不能只凭签收状态结案。"},
+    {"case_id":"D10","action":"直接退款","refund_cents":23900,"freight":"不适用","rules":["P07","P06"],"review_note":"承运商确认丢失，不需退货；25900-2000=23900。"},
+    {"case_id":"D11","action":"人工复核","refund_cents":null,"freight":"待定","rules":["P02"],"review_note":"定制商品无质量问题，转人工。"},
+    {"case_id":"D12","action":"补充材料","refund_cents":null,"freight":"待定","rules":["P01","P06"],"review_note":"故障已确认但缺该行优惠分摊金额，需补订单金额记录。"}
+  ],
+  "transfer": [
+    {"case_id":"T01","action":"退货退款","refund_cents":12900,"freight":"买家","rules":["P02","P06"],"review_note":"恰好168小时属于期限内；14900-2000=12900。"},
+    {"case_id":"T02","action":"人工复核","refund_cents":null,"freight":"待定","rules":["P02"],"review_note":"168小时1分钟已超出期限，不能按日期粗算。"},
+    {"case_id":"T03","action":"退货退款","refund_cents":19900,"freight":"商家","rules":["P03","P06"],"review_note":"故障确认360小时，促销不退换不覆盖P03；24900-5000=19900。"},
+    {"case_id":"T04","action":"退货退款","refund_cents":45900,"freight":"商家","rules":["P03","P06"],"review_note":"定制商品故障确认240小时；49900-4000=45900，需退回。"},
+    {"case_id":"T05","action":"补充材料","refund_cents":null,"freight":"待定","rules":["P01","P04"],"review_note":"补实收标签并核验；不能把客户猜测当错发事实。"},
+    {"case_id":"T06","action":"补充材料","refund_cents":null,"freight":"待定","rules":["P01","P05"],"review_note":"需开箱/缺件资料核验；有库存不等于已确认缺件。"},
+    {"case_id":"T07","action":"补充材料","refund_cents":null,"freight":"待定","rules":["P01","P02"],"review_note":"缺正式签收时间，客户说前几天不能用来计算期限。"},
+    {"case_id":"T08","action":"退货退款","refund_cents":8500,"freight":"商家","rules":["P03","P06"],"review_note":"只退键盘；12000-1500-2000=8500，不能用整单金额。"},
+    {"case_id":"T09","action":"直接退款","refund_cents":22900,"freight":"不适用","rules":["P07","P06"],"review_note":"丢失正式确认；25900-2000-1000=22900，扣除已退。"},
+    {"case_id":"T10","action":"物流核查","refund_cents":null,"freight":"待定","rules":["P07"],"review_note":"重量异常只是线索，需核实开箱和物流流转。"},
+    {"case_id":"T11","action":"人工复核","refund_cents":null,"freight":"待定","rules":["P03"],"review_note":"744小时超出720小时，不能直接套30日内规则。"},
+    {"case_id":"T12","action":"物流核查","refund_cents":null,"freight":"待定","rules":["P07"],"review_note":"照片存在不证明投递地点是客户家，仍需地址/收件核查。"}
+  ]
+}
