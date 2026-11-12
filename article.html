@@ -158,7 +158,9 @@
 <li>环境很干净。本地单实例、固定模型、没并发、没网络异常，企业多实例部署和权限收敛没覆盖到。</li>
 </ul>
 <h2>想自己跑一遍</h2>
-<p>材料都留在本地项目里，按这个顺序能复现：</p>
+<p>本次实测的全部材料已开源：政策、两批工单、评分器、标准答案、各轮运行证据和这篇文章本身，都在这个仓库里：</p>
+<p><strong><a href="https://github.com/YJduck123/soduwork-after-sales-eval">https://github.com/YJduck123/soduwork-after-sales-eval</a></strong></p>
+<p>按这个顺序能复现：</p>
 <ol>
 <li>按官方文档起本地实例（Python 3.12+ / Node 22.19+，`.start.cmd --desktop`）；</li>
 <li>用 `inputs/policy.md` 和 `inputs/development.json` 跑首轮，人工复核客户回复；</li>
@@ -170,8 +172,6 @@
 <h2>写在最后</h2>
 <p>这次实测里 SoduWork 最有说服力的，不是某个漂亮数字，是那条完整链路：<strong>首轮真实出错 → 反馈修正 → 把修正后的方法冻成插件 → 跨账号复用，对未知工单保持同样的正确率</strong>。中间那两处客户回复错误，恰恰是这篇文章成立的原因——它说明这套东西能被抓错、能修好、能复用。</p>
 <p>如果你也在琢磨"怎么把团队经验变成 AI 能复用的资产"，这个从报错到插件的路径，值得参考。</p>
-<hr>
-<p>*环境：Windows 11 / SoduWork 1.13.15（commit 0ead3d42）/ Pi / workbuddy/deepseek-v4.1-flash，2026-11-12 本机实测。*</p>
 <div class="footer-note">环境：Windows 11 / SoduWork 1.13.15（commit 0ead3d42）/ Pi / workbuddy/deepseek-v4.1-flash，2026-11-12 本机实测。</div>
 </div>
 </body>

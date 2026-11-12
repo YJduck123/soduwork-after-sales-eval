@@ -40,3 +40,8 @@ node .\evaluation\score.mjs transfer "完整路径\results.json"
 2026-11-12 环境检查：常见安装目录、卸载记录、进程和默认服务端口中未发现 SoduWork；Node.js 为 v22.21.0，本机已有 uv 管理的 Python 3.12.12。未安装新解释器、修改 PATH 或探测模型供应商。
 
 随后用官方源码启动了独立实例：客户端版本 `1.13.15`，提交 `0ead3d42c61cf387d26546ef6635d205331153d6`。本地管理地址为 `http://127.0.0.1:18989`，源码与私有数据都位于 `.runtime/`，不应随文章素材或开源包一起分发。
+
+
+## 开源仓库
+
+本项目已开源：<https://github.com/YJduck123/soduwork-after-sales-eval>

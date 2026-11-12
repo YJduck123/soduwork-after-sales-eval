@@ -169,7 +169,11 @@ B1 唯一一处问题在 T01：回复写了"商品也已核实完好"。输入�
 
 ## 想自己跑一遍
 
-材料都留在本地项目里，按这个顺序能复现：
+本次实测的全部材料已开源：政策、两批工单、评分器、标准答案、各轮运行证据和这篇文章本身，都在这个仓库里：
+
+**https://github.com/YJduck123/soduwork-after-sales-eval**
+
+按这个顺序能复现：
 
 1. 按官方文档起本地实例（Python 3.12+ / Node 22.19+，`.start.cmd --desktop`）；
 2. 用 `inputs/policy.md` 和 `inputs/development.json` 跑首轮，人工复核客户回复；
